@@ -3,10 +3,11 @@ version: 0.2
 phases:
   install:
     commands:
+      - cd src
       - npm install
   build:
     commands:
-      - sam build
+      - npm run build
   post_build:
     commands:
       - sam package --s3-bucket userbucketprueba --output-template-file packaged.yaml
