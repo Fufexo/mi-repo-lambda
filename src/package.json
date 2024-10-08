@@ -9,12 +9,11 @@
     "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
-    "@aws-sdk/client-dynamodb": "^3.0.0", 
-    "@aws-sdk/lib-dynamodb": "^3.0.0"      
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/lib-dynamodb": "^3.0.0"
   },
   "devDependencies": {
-    "aws-sdk": "^2.0.0",                     
-    "aws-sam-cli": "^1.0.0"                 
+    "aws-sdk": "^2.0.0"
   },
   "author": "Fabrizio",
   "license": "MIT"
