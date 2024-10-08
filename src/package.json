@@ -1,11 +1,21 @@
 {
-  "name": "usersapp",
+  "name": "mi-lambda-function",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.mjs",
+  "description": "Una función Lambda para gestionar usuarios en DynamoDB",
+  "main": "src/index.js",
   "scripts": {
-    "test": "test"
+    "build": "sam build",
+    "deploy": "sam deploy --guided",
+    "test": "echo \"No tests specified\" && exit 0"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.0.0", 
+    "@aws-sdk/lib-dynamodb": "^3.0.0"      
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.0.0",                     
+    "aws-sam-cli": "^1.0.0"                 
+  },
+  "author": "Tu Nombre",
+  "license": "MIT"
 }
